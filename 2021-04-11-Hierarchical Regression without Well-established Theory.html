@@ -237,6 +237,26 @@ and suggestions were <span class=GramE>taken into account</span>, this is an
 interesting and possibly potential result, showing that the effect of this
 particular IV on DV could be explained by the combination of all the other IVs.
 Based on this phenomenon, you could elaborate on your own results.<o:p></o:p></span></span></p>
+	
+	<div style="text-align: center;padding: 10px">
+<label>Zero-order correlation:<input type="text" id="number" onchange="result()"/></label>
+<label>Semi-partial correlation:<input type="text" id="number1" onchange="result()"/></label><br/><br/>
+		
+<label>Lower bound:<input type="text" id="number2" readonly="readonly"/></label>
+<label>Higher bound:<input type="text" id="number3" readonly="readonly"/></label>
+</div>
+<script type="text/javascript">
+function result(){
+var num = document.getElementById('number').value;
+document.getElementById('number2').value = num*num;
+}
+</script>
+<script type="text/javascript">
+function result(){
+var num = document.getElementById('number1').value;
+document.getElementById('number3').value = num*num;
+}
+</script>
 
 <p class=MsoNormal><span class=fontstyle01><span style='font-size:12.0pt;
 font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></span></p>
