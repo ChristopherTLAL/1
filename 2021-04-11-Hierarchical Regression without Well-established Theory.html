@@ -240,7 +240,7 @@ Based on this phenomenon, you could elaborate on your own results.<o:p></o:p></s
 	
 	<div style="text-align: center;padding: 10px">
 <label>Zero-order correlation:<input type="text" id="number" onchange="result()"/></label>
-<label>Semi-partial correlation:<input type="text" id="number1" onchange="result()"/></label><br/><br/>
+<label>Semi-partial correlation:<input type="text" id="number1" onchange="result2()"/></label><br/><br/>
 		
 <label>Lower bound:<input type="text" id="number2" readonly="readonly"/></label>
 <label>Higher bound:<input type="text" id="number3" readonly="readonly"/></label>
@@ -250,9 +250,7 @@ function result(){
 var num = document.getElementById('number').value;
 document.getElementById('number2').value = num*num;
 }
-</script>
-<script type="text/javascript">
-function result(){
+function result2(){
 var num = document.getElementById('number1').value;
 document.getElementById('number3').value = num*num;
 }
